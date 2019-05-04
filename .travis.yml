@@ -6,4 +6,4 @@ before_install:
   - docker build -t anubhav2381/react-docker -f Dockerfile.dev .
 
 script:
-  - docker run anubhav2381/react-docker npm run test -- --coverage
+  - docker run anubhav2381/react-docker npm run test  --no-watch
